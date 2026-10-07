@@ -86,7 +86,56 @@ Prediction Results
         ↓
 Data Visualization
 
-✨ Key Features
+# 💻 Streamlit Application
+
+## 🏠 Home Page
+
+The Home page provides an overview of the Credit Card Fraud Detection system, machine learning model, class imbalance handling technique, model performance, and the complete machine learning pipeline.
+
+![Home Page]
+(https://raw.githubusercontent.com/priyadharshini2002-source/credit-card-fraud-detection/main/home_page.png)
+
+---
+
+## 📤 Uploaded Transaction Data
+
+Users can upload a credit card transaction CSV file through the Streamlit application. The uploaded transaction data is displayed for further analysis and fraud detection.
+
+![Uploaded Transaction Data]
+(https://raw.githubusercontent.com/priyadharshini2002-source/credit-card-fraud-detection/main/uploaded_data.png)
+
+---
+
+## 🔍 Fraud Transaction Prediction
+
+The application performs fraud detection on the uploaded transaction dataset using the trained Random Forest model.
+
+![Fraud Transaction Prediction]
+(https://raw.githubusercontent.com/priyadharshini2002-source/credit-card-fraud-detection/main/fraud_prediction.png)
+
+---
+
+## 📊 Prediction Summary
+
+The Prediction Summary section displays the generated fraud detection results and provides an overview of the prediction output.
+
+![Prediction Summary]
+(https://raw.githubusercontent.com/priyadharshini2002-source/credit-card-fraud-detection/main/prediction_summary.png)
+
+---
+
+## 📈 Transaction Analysis
+
+The Analysis section provides visual insights into the transaction data and helps understand the distribution of legitimate and potentially fraudulent transactions.
+
+![Transaction Analysis]
+(https://raw.githubusercontent.com/priyadharshini2002-source/credit-card-fraud-detection/main/analysis_completion.png)
+
+---
+---
+
+## ✨ Key Features
+
 - ✅ Machine Learning based fraud detection
 - ✅ Random Forest classification
 - ✅ SMOTE for class imbalance handling
@@ -100,71 +149,6 @@ Data Visualization
 - ✅ Interactive Streamlit interface
 - ✅ Cloud deployment
 - ✅ Online live demo
-
-
-## 📊 Model Performance
-
-| Metric | Score |
-|---|---:|
-| ROC-AUC | **0.9689** |
-| Fraud Precision | **0.84** |
-| Fraud Recall | **0.83** |
-| Fraud F1-Score | **0.83** |
-
-### 📈 Performance Metrics
-
-| Metric | Description |
-|---|---|
-| Precision | Measures how many predicted fraud transactions were actually fraudulent |
-| Recall | Measures how many actual fraud transactions were successfully detected |
-| F1-Score | Harmonic mean of Precision and Recall |
-| ROC-AUC | Measures the model's ability to distinguish between legitimate and fraudulent transactions |
-
----
-
-# 💻 Streamlit Application
-
-The project includes an interactive Streamlit web application for uploading transaction data, detecting fraudulent transactions, viewing prediction results, and analyzing transaction data.
-
----
-
-## 🏠 Home Page
-
-The Home page provides an overview of the Credit Card Fraud Detection system, machine learning model, class imbalance handling technique, model performance, and the complete machine learning pipeline.
-
-![Home Page](https://github.com/priyadharshini2002-source/credit-card-fraud-detection/blob/main/home_page.png?raw=true)
-
----
-
-## 📤 Uploaded Transaction Data
-
-Users can upload a credit card transaction CSV file through the Streamlit application. The uploaded transaction data is displayed for further analysis and fraud detection.
-
-![Uploaded Transaction Data](https://github.com/priyadharshini2002-source/credit-card-fraud-detection/blob/main/uploaded_data.png?raw=true)
-
----
-
-## 🔍 Fraud Transaction Prediction
-
-The application performs fraud detection on the uploaded transaction dataset using the trained Random Forest model.
-
-![Fraud Transaction Prediction](https://github.com/priyadharshini2002-source/credit-card-fraud-detection/blob/main/fraud_prediction.png?raw=true)
-
----
-
-## 📊 Prediction Summary
-
-The Prediction Summary section displays the generated fraud detection results and provides an overview of the prediction output.
-
-![prediction summary](https://github.com/priyadharshini2002-source/credit-card-fraud-detection/blob/main/prediction_summary.png?raw=true)
-
----
-
-## 📈 Transaction Analysis
-
-The Analysis section provides visual insights into the transaction data and helps understand the distribution of legitimate and potentially fraudulent transactions.
-
-![Transaction Analysis](https://github.com/priyadharshini2002-source/credit-card-fraud-detection/blob/main/analysis_completion.png?raw=true)
 
 ---
 
@@ -194,9 +178,6 @@ credit-card-fraud-detection/
     ├── preprocessing.py
     ├── predict.py
     └── train_model.py
-```
-
----
 
 ## ⚙️ Installation
 
@@ -204,65 +185,40 @@ credit-card-fraud-detection/
 
 ```bash
 git clone https://github.com/priyadharshini2002-source/credit-card-fraud-detection.git
-```
-
-### 2. Navigate to the Project Directory
-
-```bash
+### Navigate to the Project Directory
 cd credit-card-fraud-detection
-```
-
-### 3. Install Dependencies
-
-```bash
+###Install Dependencies
 pip install -r requirements.txt
-```
 
----
-
-## ▶️ Run the Application
-
-```bash
+###▶️ Run the Application
 streamlit run app.py
-```
-
----
-
-## 📁 Dataset
-
+The application will open in your browser.
+###📁 Dataset
 The project uses a credit card transaction dataset containing legitimate and fraudulent transactions.
+##Dataset Features
+##Feature	Description
+Time	Time elapsed between transactions
+V1 – V28	Anonymized transaction features
+Amount	Transaction amount
+Class	Target variable
 
-### Dataset Features
 
-| Feature | Description |
-|---|---|
-| `Time` | Time elapsed between transactions |
-| `V1` – `V28` | Anonymized transaction features |
-| `Amount` | Transaction amount |
-| `Class` | Target variable |
+###Target Variable
+Class	Meaning
+0	Legitimate Transaction
+1	Fraudulent Transaction
 
-### Target Variable
 
-| Class | Meaning |
-|---:|---|
-| `0` | Legitimate Transaction |
-| `1` | Fraudulent Transaction |
-
----
-
-## 🔐 Prediction Output
-
+###🔐 Prediction Output
 The application classifies transactions into:
-
-- **Legitimate Transaction**
-- **Potentially Fraudulent Transaction**
-
+- Legitimate Transaction
+- Potentially Fraudulent Transaction
 The prediction results can also be exported as a CSV file for further analysis.
+###🌐 Deployment
+The application is deployed using Streamlit Community Cloud.
 
----
-
-## 🔮 Future Enhancements
-
+###🔗 Live Demo
+🔮 Future Enhancements
 - Real-time transaction monitoring
 - Fraud probability scoring
 - Advanced anomaly detection
@@ -273,18 +229,12 @@ The prediction results can also be exported as a CSV file for further analysis.
 - Continuous model retraining
 - Real-time fraud detection dashboard
 
----
-
-## 👩‍💻 Author
-
-**S. Priyadharshini**
-
+###👩‍💻 Author
+S. Priyadharshini
 MSc Data Science
+Machine Learning | Data Analytics | Python | Streamlit
 
----
-
-## 📜 License
-
+###📜 License
 This project is developed for educational and portfolio purposes.
-```
+
 
